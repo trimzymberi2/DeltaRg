@@ -1,0 +1,84 @@
+.Aboutus-cont{
+    flex-direction: column;
+    padding: 15vh 7%;
+    background-color: aliceblue;
+    gap: 30px;
+    .scnd-cont{
+        margin-top: 5%;
+    }
+    .abtus-frstcont{
+        width: 100%;
+        .abtus-frstbanner{
+            width: 50%;
+        }
+        .abtus-scndbanner{
+            flex-direction: column;
+            width: 50%;
+            gap: 15px;
+            text-align: center;
+            h1{
+                margin: 0;
+                width: 100%;
+                gap: 20px;
+                font-family: "RobotoMedium" ;
+            }
+            h3{
+                width: 70%;
+                font-weight: 500;
+                color: #696969;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .Aboutus-cont{
+        .abtus-frstcont{
+            .abtus-frstbanner{
+                width: 50%;
+                img{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    .Aboutus-cont{
+        .abtus-frstcont{
+            flex-direction: column;
+            width: 100%;
+            .abtus-frstbanner{
+                width: 100%;
+                img{
+                    width: 70%;
+                }
+            }
+            .abtus-scndbanner{
+                text-align: center;
+                flex-direction: column;
+                width: 100%;
+                gap: 15px;
+                h3{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:425px){
+    .Aboutus-cont{
+        .abtus-frstcont{
+
+            .abtus-frstbanner{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

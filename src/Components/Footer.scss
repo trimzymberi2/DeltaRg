@@ -1,0 +1,72 @@
+.footer-cnt{
+    background-color: #111827;
+    flex-direction: column;
+    padding: var(--def-padding);
+    font-family: 'PopinsMedium', sans-serif;
+    .footer-frst-banner{
+        justify-content: space-between;
+        .footer-logo{
+            h3{
+                font-size: 30px;
+                color: rgb(202, 193, 193);
+                gap: 3px;
+                font-family: "RobotoMedium";
+                span{
+                    color: #eab308;
+                }
+            }
+            gap: 10px;
+            img{
+                height: 40px;
+            }
+        }
+        .footer-data{
+            h3{
+                font-weight: 300;
+                font-family: 'PopinsMedium';
+                font-size: 16px;
+                color: white;
+                transition: color 0.3s ease;
+                &:hover{
+                    color: #b68b06;
+                    cursor: pointer;
+                    transition: 0.3ms;
+                }        
+            }
+            gap: 20px;
+        }
+    }
+    .footer-scnd-banner{
+        margin-top: 2em;
+        padding-top: 2em;
+        border-top: 2px ridge #74796e;
+        justify-content: flex-end;
+        p{
+            color: #74796e;
+            font-size: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .footer-scnd-banner{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 768px){
+    .footer-cnt{
+        .footer-scnd-banner{
+            justify-content: center;
+}
+    }
+    
+}
+@media only screen and (max-width: 626px){
+    .footer-frst-banner{
+        flex-direction: column;
+        gap: 20px;
+        .footer-data{
+            flex-direction: column;
+        }
+    }
+}

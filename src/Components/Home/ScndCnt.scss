@@ -1,0 +1,35 @@
+.ScndCnt-cont{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    flex-direction: column;
+    background-color: aliceblue;
+    min-height: 70vh;
+
+    .ScndCnt-banner{
+        padding: 6rem 7%;
+        flex-wrap: wrap;
+        gap: 50px;
+        img{
+            width: 200px;
+            height: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width:524px){
+    .ScndCnt-cont{
+        .ScndCnt-banner{
+            flex-wrap: wrap;
+            gap: 100px;
+
+            padding: var(--def-padding);
+            img{
+                width: 200px;
+                height: 50px;
+            }
+            .Ingevity{
+                height: 160px;
+            }
+        }
+    }
+}

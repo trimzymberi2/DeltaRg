@@ -1,0 +1,71 @@
+.Home-cont{
+    width: 100%;
+    section{
+        background-image: url('../../images/fav-7.jpg');
+        background-color: rgb(255, 255, 255);
+        background-repeat: no-repeat;
+        background-blend-mode: multiply;
+        background-position: center;
+        background-size: cover;
+        font-family: 'PopinsMedium', sans-serif;
+        min-height: 100vh;
+        width: 100%;
+        .Home-banner-txt{
+            margin-bottom: 5%;
+            padding: var(--def-padding);
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+            h1{
+                color: rgb(255, 255, 255);
+                font-size: 4rem;
+                width: 80%;
+                line-height: 1;
+                font-family: 'RobotoBold';
+            }
+            p{
+                width: 80%;
+                font-size: 1.5rem;
+                color: rgb(155, 148, 148);
+                font-family: 'RobotoMedium';
+            }
+        }
+    }
+}
+
+@media only screen  and (max-width:768px){
+    .Home-cont{
+        section{
+            background-position: 30%;
+            .Home-banner-txt{
+                padding-top: 15vh;
+                gap: 20px;
+                h1{
+                    width: 100%;
+                    font-size: 3.5rem;
+                }
+                p{
+                    width: 100%;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+@media only screen  and (max-width:426px){
+    .Home-cont{
+        section{
+            background-position: 30%;
+            display: block;
+            .Home-banner-txt{
+                gap: 20px;
+                h1{
+                    font-size: 3rem;
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
